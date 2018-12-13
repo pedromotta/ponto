@@ -4,7 +4,7 @@
   "description": "API to register the checkin and checkout",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
+    "test": "mocha --recursive",
     "coverage": "nyc mocha"
   },
   "author": "Pedro Motta",
@@ -24,5 +24,8 @@
     "eslint-plugin-standard": "^4.0.0",
     "mocha": "^5.2.0",
     "nyc": "^13.0.1"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
   }
 }
