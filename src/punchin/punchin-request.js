@@ -1,12 +1,14 @@
-class PunchinRequest {
-  constructor (requestJson) {
-    console.log('json', requestJson)
-    if (!requestJson || !requestJson.id) {
-      throw new Error('invalid json')
-    }
+const Ajv = require('ajv')
+const ajv = new Ajv({allErrors: true})
+const punchinSchema = require('./punchin-schema')
+const Validator = require('../request-validator')
 
-    this.id = requestJson.id
+class PunchinRequest extends Validator {
+  constructor() {
+    super(punchinSchema)
   }
 }
 
-module.exports = PunchinRequest
+module.exports = new PunchinRequest()
+
+
