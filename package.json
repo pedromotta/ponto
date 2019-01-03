@@ -4,6 +4,7 @@
   "description": "API to register the checkin and checkout",
   "main": "index.js",
   "scripts": {
+    "start": "node index",
     "test": "mocha --recursive",
     "coverage": "nyc mocha"
   },

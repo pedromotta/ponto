@@ -1,5 +1,5 @@
 module.exports = {
-  "properties": {
-    "id": { "type": "string" }
+  'properties': {
+    'id': { 'type': 'string' }
   }
 }
