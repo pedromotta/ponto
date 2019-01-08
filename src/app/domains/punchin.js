@@ -4,7 +4,7 @@ class Punchin {
   }
 
   isValid () {
-    return true
+    return false
   }
 }
 

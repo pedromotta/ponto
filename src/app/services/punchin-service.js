@@ -1,14 +1,15 @@
+const logger = require('../../config/logger')
 const Punchin = require('../domains/punchin')
 const punchinDb = require('../adapters/punchin-adapter')
 
 const punchinService = {
   addNewPunchin: (punchinRequest) => {
     const punchin = Punchin.newFromRequest(punchinRequest)
-    console.log(punchin)
+    logger.info(punchin)
 
     if (punchin.isValid()) {
       punchinDb.save(punchin)
-      console.log('salvou')
+      logger.debug('salvou')
       return true
     }
 

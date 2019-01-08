@@ -1,4 +1,4 @@
-const punchinRoute = require('../../src/punchin/punchin-route')
+//const punchinRoute = require('../../src/app/punchin/punchin-route')
 const assert = require('chai').assert
 
 describe('given init punchin route  ', () => {

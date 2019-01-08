@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node index",
     "test": "mocha --recursive",
-    "coverage": "nyc mocha"
+    "coverage": "nyc mocha",
+    "lint": "eslint ."
   },
   "author": "Pedro Motta",
   "license": "ISC",
@@ -29,6 +30,7 @@
   "dependencies": {
     "ajv": "^6.6.1",
     "express": "^4.16.3",
-    "mongoose": "^5.4.2"
+    "mongoose": "^5.4.2",
+    "winston": "^3.1.0"
   }
 }
